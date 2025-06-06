@@ -1,0 +1,1 @@
+import{Ca as p,Da as n,Ga as m,ra as o}from"./chunk-DDA2KTDC.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=o({type:t,selectors:[["app-comp1"]],decls:2,vars:0,template:function(e,i){e&1&&(p(0,"p"),m(1,"comp1 works!"),n())},encapsulation:2})};export{a as Comp1};
