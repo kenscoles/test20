@@ -1,1 +1,0 @@
-import{Ca as o,Da as a,Ga as i,ra as n}from"./chunk-DDA2KTDC.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-menu"]],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),i(1,"menu works!"),a())},encapsulation:2})};export{s as Menu};
