@@ -1,0 +1,15 @@
+@if(test.hasValue()){
+
+<h2>{{test.value().name}}</h2>
+Log ok: {{show()}}
+}
+@else {<h2>Please wait for connection</h2>}
+
+<button matButton="outlined" (click)="openModal()">Open modal</button>
+@if(reply()){
+<h3>{{myError()}}</h3>
+}
+
+
+
+

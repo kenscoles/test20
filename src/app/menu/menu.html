@@ -1,1 +1,21 @@
-<p>menu works!</p>
+<h4>Angular Material Select with Image Example</h4>
+<a href="https://www.itsolutionstuff.com/post/angular-material-select-dropdown-with-image-exampleexample.html">see the article</a>
+<h5>Selection: {{selectedValue()}}</h5>
+<mat-form-field>
+    <mat-label>Select Categories:</mat-label>
+    <mat-select #mySelect size="6" [(ngModel)]="selectedValue">
+        @for (category of categories; track category.value) {
+        <mat-option  [value]="category.value">
+            <img width="40" height="40" [src]="category.image">
+            {{category.viewValue}}
+        </mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+
+
+    <span class="dot" [style]="getStyle()"></span>
+     <button matButton="filled" [routerLink]="['/comp2']">Comp2</button>
+<!-- <img width="30%" src="IMG-20250510-WA0009.jpg">
+ -->
+<button (click)="test()">MySel</button>

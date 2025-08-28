@@ -1,0 +1,25 @@
+<main>
+<div style="padding:10px 5px 15px 20px"> 
+@if(test.hasValue()){
+
+<h4>{{test.value().name}}</h4>
+}
+
+@if (myResource.isLoading()) {
+    <h2>loading ...</h2>
+}
+@else if (myResource.error()){
+   <h2> Error - not found</h2>
+}
+@if(myResource.hasValue()){
+<h3>id: {{myResource.value().id}}</h3>
+<h3>name: {{myResource.value().name}}</h3>
+<h3>email: {{myResource.value().email}}</h3>
+}
+
+<mat-form-field>
+    <mat-label>type the id</mat-label>
+    <input matInput [ngModel]="id()" (ngModelChange)="id.set($any($event))">
+</mat-form-field>
+</div>
+</main>

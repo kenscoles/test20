@@ -1,0 +1,25 @@
+/* :host-context(cdk-dialog-container) {
+  display: block;
+  border-radius: 0.375em;
+  background-color: white;
+  filter: drop-shadow(0 0 2em rgba(black, 0.5));
+  padding: 0 2em 2em;
+} */
+
+.centred
+{ 
+  border-radius: 0.375em;
+  min-width: 350px;
+  max-width: 500px;
+  /* width: 400px; */
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 2em rgba(black, 0.5));
+  padding: 20px;
+  background-color: rgb(220, 231, 231);
+  text-align: center;
+}
+.example-full-width{
+  width: 100%;
+}

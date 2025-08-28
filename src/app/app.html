@@ -1,10 +1,11 @@
-<h1>Hello, {{ title }}</h1>
-<h2>Congratulations! Your app is running. 🎉</h2>
-<h2>Testing 9 cubed = {{9**3}}</h2>
-
+  
+    <p>Hello, {{ username() }}!</p>
 <div class="content">
-  <button [routerLink]="['/menu']">Menu</button>
-  <button [routerLink]="['/comp1']">Comp1</button>
+  <button matButton="outlined" [routerLink]="['/menu']">Menu</button>
+  <button matButton="filled" [routerLink]="['/comp1']">Comp1</button>
+  <button matButton="filled" [routerLink]="['/comp2']">Comp2</button>
+  <button matButton="filled" [routerLink]="['/comp3']">Comp3</button>
+  <button matButton="elevated" [routerLink]="['/crypto']">Crypto</button>
+  <button matButton="elevated" [routerLink]="['/bcrypt']">Bcrypt</button>
 </div>
-
 <router-outlet />

@@ -1,1 +1,18 @@
-<p>comp1 works!</p>
+<div>
+<button matButton="outlined" (click)="openModal()">open the modal</button>
+
+<button matButton="elevated">Basic outlined</button>
+  <button matButton="elevated">Basic elevated</button>
+  <button matButton="filled">Basic filled</button>
+  <button matButton="filled" disabled="">Basic filled disabled</button>
+</div>
+<br>
+@if(reply().name.length>0){
+<h2>Reply</h2>
+<h3> Name - {{reply().name}} </h3>
+<h3> Email - {{reply().email}} </h3>
+}
+<app-username-field 
+[(username)]="username">
+</app-username-field>
+<p>Hello, {{ username() }}!</p>

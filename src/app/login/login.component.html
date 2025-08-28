@@ -1,0 +1,36 @@
+<div class="centred">
+  <h3>Login Page</h3>
+  @if(loading){
+  <mat-spinner style="margin:0 auto;" [diameter]="50"></mat-spinner>
+  }
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter email:</mat-label>
+      <input matInput placeholder="email" formControlName="email">
+      @if (form.get('email')?.hasError('required')) {
+      <mat-error>
+        Data is <strong>required</strong>
+      </mat-error>
+      }
+      @if (form.get('email')?.hasError('email')) {
+      <mat-error>
+        Please enter a <strong>valid email</strong>
+      </mat-error>
+      }
+    </mat-form-field>
+    <br><br>
+    <mat-form-field class="example-full-width">
+      <mat-label>Enter password:</mat-label>
+      <input matInput type="password" placeholder="password" formControlName="password">
+      @if (form.get('password')?.hasError('required')) {
+      <mat-error>
+        Data is <strong>required</strong>
+      </mat-error>
+      }
+    </mat-form-field>
+    <br>
+    <button mat-raised-button>login</button>
+  </form>
+  <button (click)="closeModal()">Close</button>
+
+</div>

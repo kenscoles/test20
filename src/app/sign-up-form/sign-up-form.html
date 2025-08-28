@@ -1,0 +1,22 @@
+<article>
+  <header>
+    <h2>Sign Up</h2>
+    <em>Hello! Welcome to the family.</em>
+  </header>
+  <form [formGroup]="signUpForm"  (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name" />
+    </mat-form-field>
+    <p>
+    <mat-form-field>
+      <mat-label>Email Address</mat-label>
+      <input matInput type="email" formControlName="email" />
+    </mat-form-field>
+    <p>
+    @if (dialogRef) {
+      <button type="submit">Continue</button>
+    }
+  </form>
+  <button (click)="closeModal()">Close</button>
+</article>

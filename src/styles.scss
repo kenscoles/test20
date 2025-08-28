@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+@use '@angular/material' as mat;
+
+ /* Customize the entire app. Change :root to your selector if you want to scope the styles. */
+:root {
+  @include mat.button-overrides((
+    filled-container-color: #c70000,
+    filled-disabled-container-color: red,
+  ));
+   @include mat.theme-overrides((
+    primary: #9450ec,
+   body-medium: 500 1.15rem/1.3rem Arial,
+    corner-large: 32px,
+    level on-primary: #230f46,
+    3: 0 4px 6px 1px var(--mat-sys-surface-dim),
+  ));
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
