@@ -22,4 +22,7 @@
     <input matInput [ngModel]="id()" (ngModelChange)="id.set($any($event))">
 </mat-form-field>
 </div>
+<h1>ID : {{id()}}</h1>
+<h1>ID$ : {{idQuery$ | async}}</h1>
+
 </main>

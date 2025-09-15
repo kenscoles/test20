@@ -20,8 +20,7 @@ export class Comp1 {
   private dialog = inject(Dialog);
   protected reply = signal<iSignUpData>({ "name": "", "email": "" })
   protected username = signal('Ken');
-
-
+  
   openModal() {
     const dialogRef = this.dialog.open(SignUpForm, { disableClose: true });
     dialogRef.closed.subscribe(res => this.reply.set(res as iSignUpData))

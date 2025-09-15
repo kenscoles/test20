@@ -22,7 +22,18 @@ export class Comp2 {
   //reply = signal<iLogData>({ "email": "", "password": "" })
   reply = signal<Partial<iLogData>>({});
   //
-  test = httpResource<any>(() => 'https://node2-tjnl.onrender.com/user/79');
+test = httpResource<any>(() => ({
+  url: 'https://node2-tjnl.onrender.com/user/80',
+  //keepalive: true,
+  timeout: 8000, // ms
+  cache: 'no-cache',
+  //priority: 'low',
+  //credentials: 'omit',
+  //mode: 'same-origin',
+  //redirect: 'manual',
+}));
+ //
+  //test = httpResource<any>(() => 'https://node2-tjnl.onrender.com/user/79');
   protected title = 'test20';
   protected username = signal('Ken');
 

@@ -22,6 +22,10 @@ export const routes: Routes =[
               loadComponent: () => import('./comp3/comp3').then(c => c.Comp3)
             },
             {
+                path: 'debouncing', title: 'debouncing', // added KSC  
+              loadComponent: () => import('./debouncing/debouncing').then(c => c.Debouncing)
+            },
+            {
                 path: 'crypto', title: 'crypto', canActivate:[redirectGuard], // added KSC  
               loadComponent: () => import('./crypto/crypto').then(c => c.Crypto)
             },
