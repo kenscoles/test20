@@ -21,6 +21,10 @@ export const routes: Routes =[
                 path: 'comp3', title: 'comp3', // added KSC  
               loadComponent: () => import('./comp3/comp3').then(c => c.Comp3)
             },
+             {
+                path: 'popup', title: 'popup', // added KSC  
+              loadComponent: () => import('./popup/popup').then(c => c.Popup)
+            },
             {
                 path: 'debouncing', title: 'debouncing', // added KSC  
               loadComponent: () => import('./debouncing/debouncing').then(c => c.Debouncing)
